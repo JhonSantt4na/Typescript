@@ -1,0 +1,11 @@
+"use strict";
+let nome1 = "jhony";
+let valor = 100;
+let carro;
+carro = "corsa";
+let moto;
+moto = "Xre";
+console.log(moto);
+console.log(carro);
+console.log(valor);
+console.log(nome1);
