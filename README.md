@@ -5,15 +5,15 @@ TypeScript é uma linguagem de programação que adiciona tipagem estática opci
 
 ## Projetos Incluídos
 
-- **Projeto 1**:Breve descrição do projeto e seus objetivos principais.
+- **Projeto 1**:
 - **Projeto 2**:
 - **Projeto 3**:
-- 
+  
 ## Estrutura do Repositório
 
-- `/projeto1`: Descrição do que está contido neste diretório.
-  - `README.md`: Instruções específicas para este projeto.
-  - `src/`: Código fonte do projeto 1.
+- `/projeto1`: 
+  - `README.md`: 
+  - `src/`:
 - `/projeto2`: 
   - `README.md`: 
   - `src/`: 
