@@ -42,10 +42,14 @@ class ContaBancaria {
     }
 }
 class ContaPF extends ContaBancaria {
+    taxacalculo = 10;
     cpf;
     constructor(titular, cpf) {
         super(titular);
         this.cpf = cpf;
+    }
+    Calculartrib(valor) {
+        return valor * this.taxacalculo;
     }
     info() {
         console.log("Tipo : Conta Pessoa Fisica");
