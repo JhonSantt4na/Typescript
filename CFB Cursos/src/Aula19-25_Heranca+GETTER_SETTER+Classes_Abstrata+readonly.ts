@@ -88,10 +88,18 @@ abstract class ContaBancaria{
     //  Precisamos criar as Contas juridicas e Contas fisicas
     // Vamos aproveitar e herdar metodos e parametros da ContaBancaria.
 
+interface Tributos{
+    taxacalculo:number;
+    Calculartrib(valor:number):number;
+}
+
+
+// implementando a interface 
 
 // ContaPF Herdando a ContaBancaria.
-class ContaPF extends ContaBancaria{
+class ContaPF extends ContaBancaria implements Tributos{
     // Os atributos da classe pai ja é encorporado.
+    taxacalculo = 10;
     cpf:number; 
 
     constructor(titular:string,cpf:number){
@@ -102,6 +110,12 @@ class ContaPF extends ContaBancaria{
         // OBS: se agente colocar o super(titular) não funciona mas nao da erro pois o super tem acesso ao construtor da classe pai e la espera um numero e não retorno de nada 
         // this.info(); = Ele funciona porem precisamos mostra o cpf ou o cnpj
     }
+    // implementação da interface que pede a função 
+    Calculartrib(valor: number): number {
+        return valor * this.taxacalculo
+    }
+
+
     // Metodo de Info PF
     info(){
         console.log("Tipo : Conta Pessoa Fisica")
