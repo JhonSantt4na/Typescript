@@ -12,3 +12,14 @@ console.log(cor1);
 console.log(cor2);
 console.log(cor3);
 console.log(cor4);
+const fcores = () => {
+    return ["verde", "Amarelo", "vermelho", "Jhon"];
+};
+let [co1, co2, co3, co4] = fcores();
+let texto = "Curso de Typescript";
+let [...t] = texto.split(" ");
+console.log(t);
+let [p1, p2, p3] = texto.split(" ");
+console.log(p1);
+console.log(p2);
+console.log(p3);
